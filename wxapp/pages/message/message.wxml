@@ -1,0 +1,15 @@
+<!--pages/message/message.wxml-->
+<view wx:for="{{msg}}" wx:key='*this' class='con'>
+  <navigator url="../chat/chat?avatar={{item.avatar}}&id={{item.id}}" open-type='navigate' hover-class="none"> 　　
+    <view class='chat'>
+      <view>
+        <image class='avatar' src='{{item.avatar}}' data-item="{{item.id}}"></image>
+      </view>
+      <view class='info'>
+        <view class='username'>{{item.nickname}}</view>
+        <view class='message'>{{item.content}}</view>
+      </view>
+      <view class='date'>{{item.date}}</view>
+    </view>
+  </navigator>
+</view>

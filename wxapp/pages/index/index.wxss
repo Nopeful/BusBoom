@@ -1,0 +1,219 @@
+/* pages/index/index.wxss */
+.swiper {
+  width: 90%;
+  height: 300rpx;
+  margin-top: 50rpx;
+  margin-left: 5%;
+}
+
+.swiper image {
+  width: 100%;
+  height: 300rpx;
+  border-radius: 20rpx;
+}
+
+.search {
+  display: flex;
+  margin-top: 50rpx;
+}
+
+.input {
+  height: 70rpx;
+  width: 40%;
+  font-size: 30rpx;
+  border: 1px solid #efefef;
+  border-radius: 8rpx;
+  margin-left: 85rpx;
+  position: relative;
+  padding: 0 20rpx;
+  background-color: white;
+}
+
+/* 下拉起始 */
+.select_box {
+  background: #fff;
+  width: 38%;
+  left: 7%;
+  position: relative;
+}
+
+.select {
+  box-sizing: border-box;
+  width: 100%;
+  height: 70rpx;
+  border: 1px solid #efefef;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+
+.select_text {
+  font-size: 30rpx;
+  flex: 1;
+}
+
+.option_box {
+  position: absolute;
+  top: 70rpx;
+  width: 100%;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  height: 0;
+  overflow-y: auto;
+  border-top: 0;
+  background: #fff;
+  transition: height 0.3s;
+}
+
+.option {
+  display: block;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  border-bottom: 1px solid #efefef;
+  padding: 10rpx;
+}
+
+/* 下拉结束 */
+
+/* 显示文章开始 */
+.content {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 50rpx;
+  background-color: white;
+  border-radius: 20rpx;
+}
+
+.content-item {
+  padding-bottom: 20rpx;
+  border-bottom: 5rpx rgb(240, 242, 243) solid;
+  margin-bottom: 10rpx;
+}
+
+.info {
+  width: 95%;
+  margin: auto;
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10rpx;
+}
+
+.photo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 5rpx rgb(240, 242, 243) solid;
+  border-radius: 20%;
+}
+
+.info image {
+  width: 100rpx;
+  border-radius: 20%;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  justify-content: space-between;
+  margin-left: 10rpx;
+  margin-top: 20rpx;
+}
+
+.name {
+  color: cadetblue;
+  font-size: 34rpx;
+  font-weight: 800;
+}
+
+.gender-school {
+  margin: auto;
+  margin-left: 0;
+  margin-top: 0;
+  display: flex;
+}
+
+.gender-school view {
+  font-weight: 100;
+  font-size: 20rpx;
+  margin-right: 10rpx;
+  padding: 5rpx;
+  border-radius: 8rpx;
+}
+
+.gender {
+  background-color: rgb(30, 95, 236);
+  color: #fff;
+}
+
+.school {
+  background-color: rgb(57, 167, 61);
+  color: #fff;
+}
+
+.content-middle {
+  width: 100%;
+  margin: auto;
+  padding: 10rpx;
+  text-align: center;
+}
+
+.title {
+  font-size: 40rpx;
+  word-wrap: break-word;
+  text-align: left;
+  overflow: hidden;
+  margin-left: 7rpx;
+  margin-bottom: 7rpx;
+}
+
+.acticle {
+  width: 95%;
+  word-wrap: break-word;
+  font-size: 35rpx;
+  text-align: left;
+  overflow: hidden;
+  margin-left: 7rpx;
+  margin-bottom: 10rpx;
+}
+
+.acticle-image {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.image {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 7rpx;
+}
+
+.image image {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+
+.time-block {
+  display: block;
+  width: 200rpx;
+}
+
+.time {
+  display: block;
+  float: right;
+  text-align: right;
+}
+
+.time text {
+  font-size: 22rpx;
+  color: #a09c9c;
+}
+
+/* 显示文章结束 */

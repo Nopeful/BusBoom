@@ -1,0 +1,27 @@
+<!--pages/articles/articles.wxml-->
+<view class='loading' wx:if="{{list[0] == 0}}">
+  <image class='loading-img' src='/images/loading.svg'></image>
+</view>
+<view class='loading' wx:if="{{list.length == 0}}">
+  <text>没有已发布的文章</text>
+  <!-- <image class='loading' src='/images/loading2.gif'></image> -->
+</view>
+
+<view class='con'>
+  <block wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="key" wx:if="{{item.title}}">
+    <view class='article'>
+      <text class='title' maxlength='6'>{{item.title}}</text>
+      <text class='time'>{{item.publish_time}}</text>
+      <view class='content'>{{item.content}}</view>
+      <block class='acticle-image' wx:for="{{item.images}}" wx:for-item="item" wx:for-index="index" wx:key="key">
+        <image class='image' src='data:image/png;base64,{{item}}'></image>
+      </block>
+
+      <view class='delete' bindtap="delete" data-item="{{item.id}}">
+        <button id='delete2'>
+          <image class='del-img' src='/images/delete.png'></image>
+        </button>
+      </view>
+    </view>
+  </block>
+</view>

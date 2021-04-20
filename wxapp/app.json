@@ -1,0 +1,57 @@
+{
+  "pages": [
+    
+    "pages/login/login",
+    "pages/register/register",
+    "pages/resetpsw/resetpsw",
+    "pages/index/index",
+    "pages/message/message",
+    "pages/me/me",
+    "pages/article/article",
+    "pages/articles/articles",
+    "pages/information/information",
+    "pages/information_alter/information_alter",
+    "pages/chat/chat"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#33CCAA",
+    "navigationBarTitleText": "校内二手交易平台",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "black",
+    "borderStyle": "white",
+    "backgroundColor": "white",
+    "selectedColor": "#6799FF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index2.png"
+      },
+      {
+        "pagePath": "pages/article/article",
+        "text": "发布",
+        "iconPath": "images/article.png",
+        "selectedIconPath": "images/article2.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "images/message.png",
+        "selectedIconPath": "images/message2.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me2.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

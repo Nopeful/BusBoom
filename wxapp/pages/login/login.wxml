@@ -1,0 +1,26 @@
+<view class="con">
+  <image class='img'
+    src='https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.soogif.com%2Fkak8SN2yWBkq1mxAD6ovhwuJZIsVEMW5.jpeg&refer=http%3A%2F%2Fimg.soogif.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1613760009&t=303bfc3f8a85bb8f413d20692f6d904a'>
+  </image>
+  <form bindsubmit="login">
+    
+    <view class="input">
+      <text>账号</text>
+      <input type="text" name="account" placeholder="输入您的账号" maxlength='20'></input>
+    </view>
+
+    <view class="input">
+      <text>密码</text>
+      <input type="password" name="password" placeholder="输入您密码" maxlength='16'></input>
+    </view>
+
+    <button id="login" form-type="submit">登录</button>
+    <view class='choose'>
+      <view class="register" bindtap="gotoregister">注册账号</view>
+      <view class="delimiter">|</view>
+      <view class="resetpsw" bindtap="gotoresetpsw">忘记密码</view>
+    </view>
+
+
+  </form>
+</view>

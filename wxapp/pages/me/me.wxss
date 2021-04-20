@@ -1,0 +1,101 @@
+/* pages/me/me.wxss */
+page{
+  background-color: white;
+}
+
+.con {
+  width: 90%;
+  margin-top: 50rpx;
+  margin-left: 5%;
+}
+
+.info {
+  display: flex;
+}
+
+.photo {
+  margin: 20rpx 10rpx 10rpx 20rpx;
+  align-self: center;
+}
+
+.photo image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 20%;
+}
+
+.detail {
+  display: flex;
+  width: 400rpx;
+  flex-direction: column;
+}
+
+.name {
+  margin: auto;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.name text {
+  font-size: 34rpx;
+  font-weight: 800;
+}
+
+.gender-school {
+  margin: auto;
+  margin-left: 0;
+  margin-top: 0;
+  display: flex;
+}
+
+.gender {
+  background-color: rgb(30, 95, 236);
+  color: #fff;
+  padding: 5rpx 10rpx;
+  font-size: 20rpx;
+  border-radius: 8rpx;
+}
+
+.school {
+  background-color: rgb(57, 167, 61);
+  color: #fff;
+  padding: 5rpx 10rpx;
+  margin-left: 10rpx;
+  font-size: 20rpx;
+  border-radius: 8rpx;
+}
+
+.user-detail {
+  display: flex;
+  justify-content: space-around;
+}
+
+.type-name {
+  text-align: center;
+  font-size: 23rpx;
+}
+
+.type-num {
+  margin-top: 10rpx;
+  text-align: center;
+  font-size: 30rpx;
+  font-weight: 600;
+  position: relative;
+}
+
+.more {
+  display: flex;
+  margin: 20rpx 20rpx;
+  padding: 30rpx 0rpx;
+  justify-content: space-between;
+  border-bottom: 2rpx solid rgb(238, 238, 238);
+}
+
+.more text {
+  font-size: 30rpx;
+}
+
+.more image {
+  width: 30rpx;
+  height: 30rpx;
+}

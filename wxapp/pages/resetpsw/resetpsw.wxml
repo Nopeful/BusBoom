@@ -1,0 +1,18 @@
+<view class="con">
+  <form bindsubmit="register">
+
+      <input class="input1" type="text" name="email" placeholder="输入您的邮箱" type="{{ text }}" bindinput="bindemail" maxlength="20"></input>
+
+      <view class='code'>
+        <input class="input2" type="text" name="code" placeholder="输入验证码"></input>
+        <button id="code" bindtap="send_code">发送验证码</button>
+      </view>
+
+
+      <input class="input1" type="password" name="password" placeholder="输入您的新密码" maxlength="16"></input>
+      <input class="input1" type="password" name="password2" placeholder="再次输入您的密码" maxlength="16"></input>
+
+      <button id="register" form-type="submit">重置密码</button>
+
+  </form>
+</view>

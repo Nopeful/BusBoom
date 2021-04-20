@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+werkzeug = "*"
+flask-wtf = "*"
+flask-mail = "*"
+flask-sqlalchemy = "*"
+flask-httpauth = "*"
+pymysql = "*"
+gevent-websocket = "*"
+gevent = "*"
+flask-socketio = "*"
+websocket-server = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"

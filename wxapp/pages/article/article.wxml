@@ -1,0 +1,23 @@
+<!--pages/article/article.wxml-->
+<view class='con'>
+  <view class='input'>
+    <input bindinput="bindtitle" placeholder="请输入商品标题" maxlength='20' value="{{title}}"></input>
+    <view class='line'></view>
+    <textarea bindinput="bindcontent" maxlength='100' placeholder="请输入商品描述"  value="{{content}}"/>
+  </view>
+  
+  <view class="image-list" wx:if="{{imageList.length > 0}}">
+    <view class="showImage box" wx:for="{{imageList}}" wx:key="item">
+      <view class="delete">
+        <image src="/images/del.png" data-imageId="{{index}}" bindtap="deleteImage"/>
+      </view>
+      <image src="{{item}}" mode="aspectFill" data-imageId="{{index}}" bindtap="thisImage"/>
+    </view>
+  </view>
+  <view class="uploadIcon">
+    <image src="/images/photo.png" bindtap="chooseImage"/>
+  </view>
+  <view class='line'></view>
+  <button id="login" bindtap="publish" class>发布交易信息</button>
+  
+</view>

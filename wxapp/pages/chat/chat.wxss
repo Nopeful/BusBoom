@@ -1,0 +1,47 @@
+/* pages/cha't/chat.wxss */
+.con {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 50rpx;
+}
+
+.left {
+  text-align: left;
+  display: flex;
+  margin-bottom: 50rpx;
+}
+
+.right {
+  float: right;
+  text-align: right;
+  display: flex;
+  margin-bottom: 50rpx;
+}
+
+.left text {
+  word-wrap: break-word;
+  background-color: white;
+  padding: 15rpx;
+  border-radius: 10rpx;
+  font-size: 40rpx;
+  margin-left: 20rpx;
+  display: inline-block;
+  width: 520rpx;
+}
+
+.right text {
+  word-wrap: break-word;
+  background-color: #33CCAA;
+  color:white;
+  padding: 15rpx;
+  border-radius: 10rpx;
+  font-size: 40rpx;
+  margin-right: 20rpx;
+  display: inline-block;
+  width: 520rpx;
+}
+
+.avatar {
+  width: 80rpx;
+  height: 80rpx;
+}

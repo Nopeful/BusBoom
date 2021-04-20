@@ -1,0 +1,19 @@
+<!--pages/cha't/chat.wxml-->
+
+<view class='con' wx:for="{{msg}}" wx:for-item="item" wx:for-index="index" wx:key="key">
+  <view class='left' wx:if="{{item.to==my_id}}">
+    <image class='avatar' src='{{other_avatar}}'></image>
+    <text>{{item.message}}</text>
+  </view>
+  <!-- &&item.from==other_id &&item.to==other_id -->
+  <view class='right' wx:if="{{item.from==my_id}}">
+    <text>{{item.message}}</text>
+    <image class='avatar' src='{{my_avatar}}'></image>
+  </view>
+</view>
+
+<view>
+  <!-- <input placeholder="输入您的账号"></input> -->
+</view>
+
+<view bindtap='send'> 发送消息</view>

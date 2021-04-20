@@ -1,0 +1,47 @@
+<!--pages/me/me.wxml-->
+<view class="con">
+    <view class="info">
+        <view class="photo">
+            <image src='data:image/png;base64,{{avatar}}'></image>
+        </view>
+        <view class="detail">
+            <view class="name">
+                <text>{{nickname}}</text>
+            </view>
+            <view class="gender-school">
+                <view class="gender">{{gender}}</view>
+                <view class="school">{{school}}</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="line"></view>
+
+    <view class="user-detail">
+        <view bindtap='gotoarticles'>
+            <view class="type-name">帖子</view>
+            <view class="type-num">{{total}}</view>
+        </view>
+        <view>
+            <view class="type-name">关注</view>
+            <view class="type-num">0</view>
+        </view>
+    </view>
+
+    <view class="line"></view>
+
+    <view class="more" bindtap='gotoinformation'>
+        <text>我的信息</text>
+        <image src="/images/next.png"></image>
+    </view>
+
+    <view class="more">
+        <text>投诉建议</text>
+        <image src="/images/next.png"></image>
+    </view>
+
+    <view class="more">
+        <text>关于平台</text>
+        <image src="/images/next.png"></image>
+    </view>
+</view>

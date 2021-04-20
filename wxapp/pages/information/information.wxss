@@ -1,0 +1,110 @@
+/* pages/information/information.wxss */
+page{
+  background-color: white;
+}
+
+.con {
+  margin-top: 50rpx;
+}
+
+.avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 20%;
+  border: 1px rgb(192, 192, 192) solid;
+}
+
+.input {
+  width: 100%;
+  height: 125rpx;
+  position: relative;
+}
+
+.input text {
+  left: 40rpx;
+  top: 40rpx;
+  position: relative;
+}
+
+.input input {
+  width: 400rpx;
+  height: 80rpx;
+  left: 200rpx;
+  bottom: 25rpx;
+  position: relative;
+}
+
+#register {
+  position: relative;
+  margin-top: 50rpx;
+  background-color: rgb(51, 204, 170);
+  color: aliceblue;
+  width: 600rpx;
+  border-radius: 50rpx;
+}
+
+.choose1 {
+  margin-top: 45rpx;
+}
+
+.choose2 {
+  margin-top: 20rpx;
+}
+
+.school {
+  display: flex;
+  height: 125rpx;
+}
+
+.text {
+  left: 40rpx;
+  position: relative;
+}
+
+/* 下拉起始 */
+.select_box {
+  background: #fff;
+  width: 60%;
+  left: 120rpx;
+  position: relative;
+}
+
+.select {
+  box-sizing: border-box;
+  width: 100%;
+  height: 70rpx;
+  border: 1px solid #efefef;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+
+.option_box {
+  position: absolute;
+  top: 70rpx;
+  width: 100%;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  height: 0;
+  overflow-y: auto;
+  border-top: 0;
+  background: #fff;
+  transition: height 0.3s;
+  z-index: 999;
+}
+
+.option {
+  display: block;
+  line-height: 40rpx;
+  border-bottom: 1px solid #efefef;
+  padding: 10rpx;
+}
+
+/* 下拉结束 */

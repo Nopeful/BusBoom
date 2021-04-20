@@ -1,0 +1,46 @@
+<view class="con">
+  <view class='avatar' bindtap='chooseImage'>
+    <image class='avatar-image' src='{{avatar}}'></image>
+    <text>上传头像</text>
+  </view>
+
+  <form bindsubmit="register">
+    <view class="input">
+      <view>
+        <text>昵称</text>
+        <input type="text" name="name" value='{{name}}' placeholder="输入您的昵称"  maxlength='10'></input>
+      </view>
+    </view>
+
+    <view class='school choose1'>
+      <text class="text">性别</text>
+      <view class='select_box'>
+        <view class='select' catchtap='selectTap2'>
+          <text>{{selectData2[index2]}}</text>
+        </view>
+
+        <view class='option_box' style='height:{{show2?(selectData2.length>5?300:selectData2.length*60):0}}rpx;'>
+          <text class='option' style='{{index2==selectData2.length-1&&"border:0;"}}' wx:for='{{selectData2}}'
+            wx:key='this' data-index='{{index}}' catchtap='optionTap2'>{{item}}</text>
+        </view>
+      </view>
+    </view>
+
+    <view class='school choose2'>
+      <text class="text">学校</text>
+      <view class='select_box'>
+        <view class='select' catchtap='selectTap'>
+          <text>{{selectData[index]}}</text>
+        </view>
+
+        <view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+          <text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this'
+            data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
+        </view>
+      </view>
+    </view>
+
+    <button id="register" form-type="submit">填写信息</button>
+
+  </form>
+</view>

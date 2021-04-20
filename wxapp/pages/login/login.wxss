@@ -1,0 +1,70 @@
+.con {
+  margin-top: 50rpx;
+}
+
+.img {
+  width: 500rpx;
+  height: 500rpx;
+  margin-left: 15%;
+  border-radius: 20%;
+}
+
+.input {
+  width: 90%;
+  margin-left: 5%;
+  height: 125rpx;
+  position: relative;
+  margin-top: 20rpx;
+  background-color: white;
+  border-radius: 5rpx;
+}
+
+.input text {
+  left: 40rpx;
+  top: 40rpx;
+  position: relative;
+}
+
+.input input {
+  width: 400rpx;
+  height: 80rpx;
+  left: 200rpx;
+  bottom: 25rpx;
+  position: relative;
+}
+
+#login {
+  position: relative;
+  margin-top: 50rpx;
+  background-color: rgb(51, 204, 170);
+  color: aliceblue;
+  width: 600rpx;
+  border-radius: 50rpx;
+}
+
+.choose{
+  display: flex;
+  font-size: 35rpx;
+  color: rgb(58, 117, 165);
+}
+
+.register {
+  position: relative;
+  margin-top: 50rpx;
+  left: 29.5%;
+  border-bottom: 1px solid;
+}
+
+.delimiter{
+  position: relative;
+  margin-top: 50rpx;
+  left: 31.5%;
+}
+
+.resetpsw {
+  position: relative;
+  margin-top: 50rpx;
+  left: 33.5%;
+  border-bottom: 1px solid;
+}
+

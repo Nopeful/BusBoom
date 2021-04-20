@@ -1,0 +1,45 @@
+/* pages/message/message.wxss */
+.con{
+  height: 140rpx;
+}
+
+.chat {
+  display: flex;
+  border-bottom: 1rpx solid #b3b3b3;
+  width: 96%;
+  margin-left: 2%;
+}
+
+.avatar {
+  height: 96rpx;
+  width: 96rpx;
+  margin: 16rpx;
+  border-radius: 8rpx;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-left: 12rpx;
+}
+
+.username{
+  font-size: 35rpx;
+  font-weight: 500;
+  margin-bottom: 12rpx;
+  margin-top: 20rpx;
+}
+
+.message{
+  font-size: 32rpx;
+  color: #999;
+}
+
+.date{
+  color:#999;
+  width: auto;
+  margin-top: 20rpx;
+  margin-right: 28rpx;
+  font-size: 28rpx;
+}

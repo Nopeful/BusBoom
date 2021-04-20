@@ -1,0 +1,17 @@
+/**app.wxss**/
+page{
+  background-color: rgb(245,245,245)
+}
+
+.line {
+  height: 1px;
+  background-color: #f1e5e5;
+  margin: 18.72rpx 0;
+  margin-top: 25rpx;
+  margin-bottom: 25rpx;
+}
+
+.line2{
+  height: 1px;
+  background-color: #f1e5e5;
+}
